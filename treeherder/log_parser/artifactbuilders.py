@@ -61,7 +61,7 @@ class ArtifactBuilderBase:
         return self.artifact
 
 
-class BuildbotLogViewArtifactBuilder(ArtifactBuilderBase):
+class LogViewerArtifactBuilder(ArtifactBuilderBase):
     """Makes the artifact for the structured log viewer."""
 
     def __init__(self, url=None):
@@ -71,7 +71,7 @@ class BuildbotLogViewArtifactBuilder(ArtifactBuilderBase):
         self.name = "text_log_summary"
 
 
-class BuildbotPerformanceDataArtifactBuilder(ArtifactBuilderBase):
+class PerformanceDataArtifactBuilder(ArtifactBuilderBase):
     """Makes the artifact for performance data."""
 
     def __init__(self, url=None):
