@@ -21,4 +21,14 @@ class Migration(migrations.Migration):
                 to='model.Job',
             ),
         ),
+        migrations.AlterField(
+            model_name='textlogerror',
+            name='step',
+            field=models.ForeignKey(
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name='errors',
+                to='model.TextLogStep',
+            ),
+        ),
     ]
