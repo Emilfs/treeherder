@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 class ArtifactBuilderBase:
     """
-    Base class for all Buildbot log parsers.
+    Base class for all log parsers.
 
     The child class will be designed to create a particular type of artifact.
 
